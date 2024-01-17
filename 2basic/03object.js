@@ -1,4 +1,5 @@
 // singleton
+const users = new Object(); // singlton object
 // Object.create(); // by this constructor method we can make singleton
 
 // Object literals

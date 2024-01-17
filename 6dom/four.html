@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: pink">
+    <ul class="language">
+      <li>javascript</li>
+    </ul>
+  </body>
+  <script>
+    // function addlang(name) {
+    //   const li = document.createElement("li");
+    //   li.innerHTML = `${name}`;
+    //   //   li.innerHTML = "ruby";
+    //   document.querySelector(".language").appendChild(li);
+    // }
+    // addlang("python");
+
+    function lang(name) {
+      const li = document.createElement("li");
+      const addtext = document.createTextNode(name);
+      li.appendChild(addtext);
+      document.querySelector(".language").appendChild(li);
+    }
+    lang("ruby");
+  </script>
+</html>

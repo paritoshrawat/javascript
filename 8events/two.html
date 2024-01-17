@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>chai or code</h1>
+    <button id="stop">stop</button>
+  </body>
+  <script>
+    const changeText = function () {
+      document.querySelector("h1").innerHTML = "javascript";
+    };
+
+    // setTimeout(function () {
+    //   console.log("paritosh");
+    // }, 2000);
+
+    const change = setTimeout(changeText, 2000); // here we only pass refrence but we donot execute function
+
+    document.querySelector("#stop").addEventListener("click", () => {
+      clearTimeout(change);
+      console.log("clear time out press");
+    });
+  </script>
+</html>

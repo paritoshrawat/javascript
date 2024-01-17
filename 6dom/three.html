@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: white"></body>
+
+  <script>
+    const div = document.createElement("div");
+    console.log(div);
+    div.className = "main";
+
+    div.style.backgroundColor = "pink";
+    const text = document.createTextNode("chai");
+    div.appendChild(text);
+    document.body.appendChild(div);
+
+    function createnediv(div) {
+      //   div.textContent = "chai cahi ";
+      for (let i = 0; i <= 5; i++) {
+        const h1 = document.createElement("h1");
+        h1.className = `day${i}`;
+        h1.style.backgroundColor = "pink";
+
+        const h1Text = document.createTextNode(`Day ${i + 1}`);
+        h1.appendChild(h1Text);
+
+        div.appendChild(h1);
+      }
+    }
+    createnediv(div);
+  </script>
+</html>

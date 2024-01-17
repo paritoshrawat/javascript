@@ -1,0 +1,42 @@
+/* .button {
+  width: 450px;
+  height: 450px;
+}
+#gray {
+  background-color: gray;
+} */
+
+/* colorstyle.css */
+
+.button {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+  cursor: pointer;
+  /* border: 1px solid #000; */
+}
+
+#gray {
+  background-color: #808080;
+  width: 100px;
+  height: 100px;
+}
+
+#white {
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+}
+
+#blue {
+  background-color: #3498db;
+  width: 100px;
+  height: 100px;
+}
+
+#yellow {
+  background-color: #f1c40f;
+  width: 100px;
+  height: 100px;
+}
